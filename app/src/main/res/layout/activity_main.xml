@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Total Expenses: Rs/- 0"
+        android:textSize="20dp"
+        android:padding="20dp"/>
+
+    <ListView
+        android:id="@+id/listViewExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="-74dp"
+        android:divider="@android:color/white"
+        android:dividerHeight="1dp">
+
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonAddExpense"
+            android:layout_width = "150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Add Expense" />
+
+        <Button
+            android:id="@+id/buttonClearTotal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Clear All" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
